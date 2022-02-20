@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Norse;
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.left {
+    min-width: 33%;
+    background-image: url("bgimg.jpg");
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 20%;
+    text-align: center;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: Norse;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.right p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    font-weight: 700;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 4px 4px;
+    padding: 0 2rem 2rem 2rem;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+}
+
+h2 {
+    padding: 1rem 0;
+}
+
+.cell {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: .5rem;
+}
+
+.cell:nth-child(n) {
+    padding-right: 3rem;
+}
+
+
+button {
+    margin: 2rem;
+    max-width: 200px;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(195, 218, 195);
+}
+
+button:hover {
+    background-color: rgb(148, 165, 148);
+}
+
+input {
+    flex: 1 0 50%;
+    box-shadow: inset 1px 1px 5px;
+}
+label {
+    font-size: .75rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 15px rgb(148, 165, 148);
+    border: none;
+}
